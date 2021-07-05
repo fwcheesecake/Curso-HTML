@@ -1,0 +1,98 @@
+:root {
+    --color-primary: #814093;
+    --color-secondary: #F83292;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+}
+
+*::selection {
+    background: var(--color-secondary);
+    color: white;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: #f9f9f9;
+}
+
+section {
+    min-height: 100vh;
+    padding: 7.5rem 9% 2rem 9%;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background: var(--color-primary);
+    padding: 15px 15px;
+    color: white;
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background: var(--color-secondary);
+}
+
+.heading {
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 2rem 9%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+header .logo {
+    font-size: 2rem;
+    color: var(--color-secondary);
+}
+
+header .logo span {
+    color: var(--color-primary);
+}
+
+header .navbar a {
+    font-size: 1.7rem;
+    margin-left: 2rem;
+    color: var(--color-primary)
+}
+
+header .navbar a:hover {
+    color: var(--color-secondary)
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background: url(/assets/img/home-bg-img.png) center;
+}
+
+.home .image img {
+    width: 40vw;
+}
